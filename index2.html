@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newsletter Subscription</title>
+  <style>
+    #subscribe-button {
+      background-color: #007BFF;
+      color: white; 
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #subscribe-button:hover {
+      background-color: #0056b3; 
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>Subscribe to Our Newsletter</h1>
+    <p>Stay updated with our latest news and updates by subscribing to our newsletter.</p>
+    
+    <form action="process_subscription.php" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button id="subscribe-button" type="submit" name="subscribe">Subscribe</button>
+    </form>
+
+    <img src="arrow.jpeg" alt="Arrow Image" style="width: 100px; height: 100px;">
+
+    <iframe src="animation_sample.html" width="400" height="300" frameborder="0"></iframe>
+  </article>
+</body>
+</html>
